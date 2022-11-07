@@ -10,3 +10,7 @@
       <img width="953" alt="Screenshot 2022-11-07 at 18 58 57" src="https://user-images.githubusercontent.com/114593402/200388633-9bb67e4d-f402-4e87-97a7-d0e504ec0e5a.png">
 
 3️⃣ Por ultimo realice querys con los datos de las tablas atraves de las relaciones establecidas en el paso anterior
+    A continuacion, 5 ejemplos de querys:
+        En esta podemos observar el genero de la pelicula y la duracion media de todas las peliculas de cada genero
+        <img width="953" alt="Screenshot 2022-11-07 at 18 58 57" src="https://user-images.githubusercontent.com/114593402/200389332-2043d85f-3346-4acb-9f88-36c41d995f9e.png">
+
