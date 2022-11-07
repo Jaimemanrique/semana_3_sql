@@ -32,7 +32,7 @@ on f.film_id = od.film_id
 left join actor as a
 on od.actor_id = a.actor_id
 left join category as c
-on od.category_id = c.category_id;
+on od.category_id = c.category_id limit 8;
 
 
 select f.title, count(od.actor_id) 
@@ -40,7 +40,7 @@ from film as f
 left join old_HDD as od
 on f.film_id = od.film_id
 group by f.title
-order by count(od.actor_id) desc;
+order by count(od.actor_id) desc limit 10;
 
 select avg(rental_rate) from film;
 
@@ -50,9 +50,15 @@ left join old_HDD as od
 on c.category_id = od.category_id
 left join film as f
 on od.film_id = f.film_id
-group by c.name;
+group by c.namecategory;
 
-
+select title, rental_date, return_date
+from film as f
+inner  join inventory as i
+on f.film_id=i.film_id
+inner join rental as r
+on r.inventory_id=i.inventory_id
+limit 10;
 
 
 
