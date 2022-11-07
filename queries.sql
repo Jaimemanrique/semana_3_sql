@@ -25,16 +25,15 @@ from film as f
 order by f.rental_rate desc limit 3;
 
 
-select * from language;
-
-select l.name, f.title, a.full_name 
+select distinct title, a.full_name, c.name
 from film as f
-left join language as l
-on l.language_id = f.language_id
-left join old_HDD as o
-on f.language_id = l.language_id
+left join old_HDD as od
+on f.film_id = od.film_id
 left join actor as a
-on a.actor_id = o.actor_id;
+on od.actor_id = a.actor_id
+left join category as c
+on od.category_id = c.category_id;
+
 
 select f.title, count(od.actor_id) 
 from film as f
@@ -44,6 +43,16 @@ group by f.title
 order by count(od.actor_id) desc;
 
 select avg(rental_rate) from film;
+
+select c.name, avg(f.length)
+from category as c
+left join old_HDD as od
+on c.category_id = od.category_id
+left join film as f
+on od.film_id = f.film_id
+group by c.name;
+
+
 
 
 
