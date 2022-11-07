@@ -17,4 +17,9 @@
                                                                                                      <img width="147" alt="Screenshot 2022-11-07 at 19 46 11" src="https://user-images.githubusercontent.com/114593402/200390236-74eb647d-2443-4373-bd20-14b8b8bf2c10.png">
               En esta podemos observar el numero de actores que hay en cada pelicula (limite de las 10 con mas actores)
                                                                                                       <img width="243" alt="Screenshot 2022-11-07 at 19 49 17" src="https://user-images.githubusercontent.com/114593402/200390745-6350da9f-6c66-4249-91f9-53ac30ed65ac.png">
+              En esta se muestra el titulo de la pelicula el genero de la misma y los actores que participan en ella
+                    <img width="311" alt="Screenshot 2022-11-07 at 19 54 52" src="https://user-images.githubusercontent.com/114593402/200391742-f5d08db0-0076-430b-b159-82b916a14979.png">
+              En esta se observa la fecha de alquiler de la pelicula la fecha de devolucion y el titulo
+                   <img width="355" alt="Screenshot 2022-11-07 at 19 57 42" src="https://user-images.githubusercontent.com/114593402/200392323-9148311b-31a2-4abf-80dd-4574e708c54e.png">
+ 
 
