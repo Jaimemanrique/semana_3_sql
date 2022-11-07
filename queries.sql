@@ -19,19 +19,34 @@ drop column full_name;
 select title,rental_duration from film
 where rental_duration < 4; 
 
-select title, full_name, rental_rate from film
-left join actor
-on actor_id
-where rental_rate < 1;
+
+select f.title, f.rental_rate 
+from film as f
+order by f.rental_rate desc limit 3;
+
 
 select * from language;
 
-select l.name, f.title, a.full_name from film as f
+select l.name, f.title, a.full_name 
+from film as f
 left join language as l
-on l.language_id
+on l.language_id = f.language_id
+left join old_HDD as o
+on f.language_id = l.language_id
 left join actor as a
-on a.actor_id
-where l.name = 'German';
+on a.actor_id = o.actor_id;
+
+select f.title, count(od.actor_id) 
+from film as f
+left join old_HDD as od
+on f.film_id = od.film_id
+group by f.title
+order by count(od.actor_id) desc;
+
+select avg(rental_rate) from film;
+
+
+
 
 
 
