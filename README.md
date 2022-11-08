@@ -1,6 +1,6 @@
 # sql-data-base-building
 1️⃣ El primer paso del proyecto fue limpiar los archivos, para ello utilizamos pandas
-    ➡️ Para la limpieza de datos use:
+  <br />  ➡️ Para la limpieza de datos use: <br />
    <br />   category.info(memory_usage='deep') ➡️ para ver valores nulos <br />
     <br />  .drop(columns) ➡️ para eliminar columnas que no aportan informacion <br />
    <br />   .replace ➡️ para sustituir valores <br />
