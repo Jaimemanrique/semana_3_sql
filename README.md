@@ -6,7 +6,7 @@
    <br />   .replace ➡️ para sustituir valores <br />
       
 2️⃣ El segundo paso fue crear una nueva base de datos en sql con los archivos limpios
-    ➡️ cree las relaciones con un diagrama
+  <br />  ➡️ cree las relaciones en el diagrama <br />
 <br />      <img width="953" alt="Screenshot 2022-11-07 at 18 58 57" src="https://user-images.githubusercontent.com/114593402/200388633-9bb67e4d-f402-4e87-97a7-d0e504ec0e5a.png"> <br />
 
 3️⃣ Por ultimo realice querys con los datos de las tablas atraves de las relaciones establecidas en el paso anterior
